@@ -1,8 +1,7 @@
 [user]
 	signkey = F3A9F3229316C696
 	name = Geronimo Orozco
-    email = 188718+patux@users.noreply.github.co
-	signingkey = /home/patux/.ssh/id_ed25519.pub
+	email = 188718+patux@users.noreply.github.com
 [core]
 	editor = nvim
 [init]
