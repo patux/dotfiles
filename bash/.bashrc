@@ -1,7 +1,6 @@
 # If not running interactively, don't do anything (leave this at the top of this file)
 [[ $- != *i* ]] && return
 
-
 if [ -f /etc/os-release ]; then
   . /etc/os-release
   if [ "$ID" == "arch" ]; then
@@ -16,7 +15,7 @@ fi
 # ~/.bash_aliases, instead of adding them here directly.
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+  . ~/.bash_aliases
 fi
 
 export VAGRANT_DEFAULT_PROVIDER=libvirt
@@ -42,14 +41,13 @@ export PATH=$JAVA_HOME/bin:$PATH
 POSH_THEME="stelbent-compact.minimal"
 eval "$(oh-my-posh init bash --config $HOME/.cache/oh-my-posh/themes/$POSH_THEME.omp.json)"
 
-. "$HOME/.local/share/../bin/env"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - bash)"
 
 # Added by hand by geronimo for rocm reference AMD laptop uses gfx90c
-# gfx90a = high-performance data center GPU (CDNA 2) with full FP64 support. 
-# gfx90c = integrated graphics (Vega iGPU) in consumer APUs, with limited compute capabilities.  
+# gfx90a = high-performance data center GPU (CDNA 2) with full FP64 support.
+# gfx90c = integrated graphics (Vega iGPU) in consumer APUs, with limited compute capabilities.
 # For software like SeisSol or Ollama, compiling for gfx90c requires setting HSA_OVERRIDE_GFX_VERSION=9.0.12 (since gfx90c = 9.0.12 in hex), while gfx90a requires HSA_OVERRIDE_GFX_VERSION=9.0.10.
 
 export ROCM_PATH=/opt/rocm
