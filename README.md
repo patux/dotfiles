@@ -15,4 +15,12 @@ stow bash
 stow gitconfig
 stow nvim
 
+
+## Omarchy
+
+This must be run on omarchy after running `stow nvim`  in omarchy
+
+
+```
+ln -s ~/.config/omarchy/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
 ```
