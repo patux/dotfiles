@@ -1,8 +1,10 @@
 [user]
-	signkey = F3A9F3229316C696
-	name = Geronimo Orozco
-	email = 188718+patux@users.noreply.github.com
+    name = Geronimo Orozco
+    email = 188718+patux@users.noreply.github.com
+    signingkey =  0830A44E19023B4F
 [core]
-	editor = nvim
+    editor = nvim
 [init]
-	defaultBranch = master
+    defaultBranch = master
+[commit]
+	gpgsign = true
