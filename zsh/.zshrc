@@ -32,3 +32,4 @@ export PATH="/Users/patux/.antigravity/antigravity/bin:$PATH"
 export PATH=/Users/patux/.opencode/bin:$PATH
 
 . "$HOME/.config/nvim/../bin/env"
+export EDITOR=nvim
