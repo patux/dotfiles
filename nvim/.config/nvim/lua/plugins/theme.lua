@@ -1,1 +1,0 @@
-/home/patux/.config/omarchy/current/theme/neovim.lua
