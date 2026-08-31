@@ -45,6 +45,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - bash)"
 
+# Load pyenv-virtualenv automatically by adding
+# the following to ~/.bashrc:
+# eval "$(pyenv virtualenv-init -)"
+
 # Added by hand by geronimo for rocm reference AMD laptop uses gfx90c
 # gfx90a = high-performance data center GPU (CDNA 2) with full FP64 support.
 # gfx90c = integrated graphics (Vega iGPU) in consumer APUs, with limited compute capabilities.
