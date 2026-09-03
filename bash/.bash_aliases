@@ -7,3 +7,4 @@ alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wa
 alias vim=nvim
 alias vi=nvim
 alias v=nvim
+alias gemini=agy
