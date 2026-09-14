@@ -64,3 +64,4 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 eval "$(zoxide init bash)" # Replace bash with zsh or fish as needed
+eval "$(fzf --bash)"
