@@ -33,4 +33,6 @@ export PATH=/Users/patux/.opencode/bin:$PATH
 
 . "$HOME/.config/nvim/../bin/env"
 export EDITOR=nvim
-eval "$(zoxide init bash)" # Replace bash with zsh or fish as needed
+eval "$(zoxide init zsh)"
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
