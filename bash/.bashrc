@@ -23,6 +23,7 @@ fi
 if [ -d "$HOME/.local/bin" ]; then
   PATH="$HOME/.local/bin:$PATH"
 fi
+
 # oh-my-posh
 POSH_THEME="stelbent-compact.minimal"
 eval "$(oh-my-posh init bash --config $HOME/.cache/oh-my-posh/themes/$POSH_THEME.omp.json)"
@@ -47,3 +48,10 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 eval "$(zoxide init bash)" # Replace bash with zsh or fish as needed
 eval "$(fzf --bash)"
+export SUDO_EDITOR=/usr/bin/nvim
+
+# opencode
+export PATH=/home/patux/.opencode/bin:$PATH
+
+# Added by Antigravity CLI installer
+export PATH="/home/patux/.local/bin:$PATH"
