@@ -1,1 +1,5 @@
 window-decoration = false
+# font-family = "Paper Mono Medium"
+# font-family = "Consolas"
+font-family = "JetBrains Mono Medium"
+font-size = 12
